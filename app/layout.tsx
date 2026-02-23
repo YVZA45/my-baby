@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 
 
 
@@ -21,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-Poppins antialiased"
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
